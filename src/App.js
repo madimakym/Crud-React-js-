@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Switch, Redirect } from 'react-router-dom'
+import CreatePerson from './components/person/CreatePerson'
+import Person from './components/person/Person'
+import ShowPerson from './components/person/ShowPerson'
+import EditPerson from './components/person/EditPerson'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+          <Header/>
+          <Switch>
+            <Route exact path="/" component={Person} />
+            <Route path='/create' component={CreatePerson}/>
+            <Route path="/person/show/:id" component={ShowPerson} />
+            <Route path="/person/edit/:id" component={EditPerson} />
+            <Redirect to="/" />
+          </Switch>
+          <Footer/>
       </div>
     );
   }
 }
 
-export default App;
+export default App

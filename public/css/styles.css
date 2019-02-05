@@ -1,0 +1,63 @@
+body{
+    background-color: #5a5a5a21;
+}
+
+.bg-primary{
+    background-color: #9a0808 !important;
+}
+
+.table{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 10px;
+    background: white;
+}
+
+.section{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 10px;
+    background: white;
+}
+
+.section h5{
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin: 7px;
+}
+
+label{
+    font-weight: 500;
+}
+
+th, td{
+    text-align: center;
+}
+
+.adress{
+    text-align: left;
+}
+
+.footer {
+    margin-top: 20px;
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+#footer, ul, li {
+    /* padding-right: 5px; */
+    /* margin: 20px */
+}
+
